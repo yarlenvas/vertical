@@ -1,0 +1,112 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly JSCore, Version=1.0.5051.35922, Culture=neutral, PublicKeyToken=b967213f6d29a3be: 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly WebKit.Interop, Version=534.0.0.0, Culture=neutral, PublicKeyToken=b967213f6d29a3be: 
+	hash=None, flags=None
+Assembly WindowsBase, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35: 
+	hash=None, flags=None
+Assembly Microsoft.VisualC, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=None, flags=None
+Class WebKit.JSCore.JSValue: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Dynamic.DynamicObject
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Boolean IsObject 'get ' : 
+    Boolean IsString 'get ' : 
+    Boolean IsNumber 'get ' : 
+    Boolean IsBoolean 'get ' : 
+    Boolean IsNull 'get ' : 
+    Boolean IsUndefined 'get ' : 
+  Methods:
+    ToString(): PrivateScope, Public, Virtual, HideBySig
+    get_IsUndefined(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsNull(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsBoolean(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsNumber(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsString(): PrivateScope, Public, HideBySig, SpecialName
+    get_IsObject(): PrivateScope, Public, HideBySig, SpecialName
+    getValue(): PrivateScope, Public, HideBySig
+    ToJSONString(): PrivateScope, Public, HideBySig
+    ToBoolean(): PrivateScope, Public, HideBySig
+    ToNumber(): PrivateScope, Public, HideBySig
+    ToObject(): PrivateScope, Public, HideBySig
+    Protect(): PrivateScope, Public, HideBySig
+    Unprotect(): PrivateScope, Public, HideBySig
+    TryConvert(ConvertBinder, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    TryGetMember(GetMemberBinder, Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    TrySetMember(SetMemberBinder, Object): PrivateScope, Public, Virtual, HideBySig
+    TryInvokeMember(InvokeMemberBinder, Object[], Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    TryInvoke(InvokeBinder, Object[], Object&(Out)): PrivateScope, Public, Virtual, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Class WebKit.JSCore.ActionDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object[]): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object[], AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class WebKit.JSCore.EventDelegate: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object[]): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(Object[], AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class WebKit.JSCore.JavaScriptFunction: AutoLayout, AnsiClass, Class, Public, Sealed, BeforeFieldInit
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(JSContext, Object[]): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    BeginInvoke(JSContext, Object[], AsyncCallback, Object): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Final, Virtual, VtableLayoutMask
+Class WebKit.JSCore.JSObject: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :WebKit.JSCore.JSValue
+  Methods:
+    HasProperty(String): PrivateScope, Public, HideBySig
+    GetProperty(String): PrivateScope, Public, HideBySig
+    SetProperty(String, ActionDelegate): PrivateScope, Public, HideBySig
+    SetProperty(String, EventDelegate): PrivateScope, Public, HideBySig
+    SetProperty(String, String): PrivateScope, Public, HideBySig
+    SetProperty(String, Object): PrivateScope, Public, HideBySig
+    SetProperty(String, Double): PrivateScope, Public, HideBySig
+    SetProperty(String, Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    CallAsFunction(Object[]): PrivateScope, Public, HideBySig
+    CallFunction(String, Object[]): PrivateScope, Public, HideBySig
+    ToDictionary(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    ToDictionary(): PrivateScope, Public, HideBySig
+Class WebKit.JSCore.JSContext: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(WebKit.Interop.IWebFrame): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Methods:
+    EvaluateScript(String, Object, String, Int32): PrivateScope, Public, HideBySig
+    EvaluateScript(String, Object): PrivateScope, Public, HideBySig
+    EvaluateScript(String): PrivateScope, Public, HideBySig
+    CheckScriptSyntax(String, Object, String, Int32): PrivateScope, Public, HideBySig
+    CheckScriptSyntax(String, Object): PrivateScope, Public, HideBySig
+    CheckScriptSyntax(String): PrivateScope, Public, HideBySig
+    GarbageCollect(): PrivateScope, Public, HideBySig
+    MakeUndefined(): PrivateScope, Public, HideBySig
+    MakeNull(): PrivateScope, Public, HideBySig
+    MakeBoolean(Boolean(HasFieldMarshal)): PrivateScope, Public, HideBySig
+    MakeNumber(Double): PrivateScope, Public, HideBySig
+    MakeString(String): PrivateScope, Public, HideBySig
+    MakeValueFromJSONString(String): PrivateScope, Public, HideBySig
+    MakeObject(Object): PrivateScope, Public, HideBySig
+    GetGlobalObject(): PrivateScope, Public, HideBySig
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig

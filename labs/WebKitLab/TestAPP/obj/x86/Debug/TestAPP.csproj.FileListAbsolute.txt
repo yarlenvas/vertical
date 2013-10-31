@@ -1,0 +1,12 @@
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\bin\Debug\TestAPP.exe
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\bin\Debug\TestAPP.pdb
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\bin\Debug\WebKitBrowser.dll
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\bin\Debug\WebKitCore.dll
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\obj\x86\Debug\TestAPP.Form1.resources
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\obj\x86\Debug\TestAPP.Properties.Resources.resources
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\obj\x86\Debug\TestAPP.csproj.GenerateResource.Cache
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\obj\x86\Debug\TestAPP.exe
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\obj\x86\Debug\TestAPP.pdb
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\bin\Debug\TestAPP.exe.config
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\obj\x86\Debug\TestAPP.csprojResolveAssemblyReference.cache
+C:\Users\yarlen\Documents\vertical\labs\WebKitLab\TestAPP\bin\Debug\JSCore.dll
